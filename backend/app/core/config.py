@@ -4,8 +4,8 @@ from typing import Optional
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    PROJECT_NAME: str = "TaxAgent API"
-    DATABASE_URL: str = "sqlite+aiosqlite:///./taxagent.db"
+    PROJECT_NAME: str = "
+    DATABASE_URL: str = "sqlite+aiosqlite:///./
     SECRET_KEY: str = "supersecretkey"
     ALGORITHM: str = "HS256"
     
@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     SMTP_USER: Optional[str] = None
     SMTP_PASSWORD: Optional[str] = None
     SMTP_FROM_EMAIL: str = "theurij113@gmail.com"
-    SMTP_FROM_NAME: str = "TaxAgent Support"
+    SMTP_FROM_NAME: str = ""
     
     DEBUG: bool = False
 

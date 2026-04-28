@@ -8,20 +8,20 @@ from sqlmodel import select
 async def seed():
     async with AsyncSessionLocal() as session:
         # Check if user exists
-        stmt = select(User).where(User.email == "joseph@taxagent.ke")
+        stmt = select(User).where(User.email == "joseph@vatify.ke")
         result = await session.execute(stmt)
         user = result.scalar_one_or_none()
         
         if not user:
             print("Seeding user...")
             user = User(
-                email="joseph@taxagent.ke",
-                hashed_password="taxagent2026",
+                email="joseph@vatify.ke",
+                hashed_password="vatify2026",
                 full_name="Joseph Developer",
                 phone_number="0706063617",
                 id_number="41764982",
                 kra_pin="A019914707A",
-                business_name="TaxAgent Solutions",
+                business_name="Vatify Solutions",
                 tax_obligation="VAT"
             )
             session.add(user)

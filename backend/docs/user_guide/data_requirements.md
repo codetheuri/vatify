@@ -1,6 +1,6 @@
 # Data & Document Requirements
 
-TaxAgent is a **Reconciliation Assistant**. Its primary job is to ensure that your financial activity matches your tax reporting.
+Vatify is a **Reconciliation Assistant**. Its primary job is to ensure that your financial activity matches your tax reporting.
 
 ## 📥 What to Upload
 

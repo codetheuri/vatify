@@ -13,9 +13,9 @@ export const useAuth = () => {
     if (newRefreshToken) refreshToken.value = newRefreshToken
 
     if (import.meta.client) {
-      localStorage.setItem('taxagent_user', JSON.stringify(userData))
-      localStorage.setItem('taxagent_token', accessToken)
-      if (newRefreshToken) localStorage.setItem('taxagent_refresh_token', newRefreshToken)
+      localStorage.setItem('vatify_user', JSON.stringify(userData))
+      localStorage.setItem('vatify_token', accessToken)
+      if (newRefreshToken) localStorage.setItem('vatify_refresh_token', newRefreshToken)
     }
   }
 
@@ -31,9 +31,9 @@ export const useAuth = () => {
     refreshToken.value = null
 
     if (import.meta.client) {
-      localStorage.removeItem('taxagent_user')
-      localStorage.removeItem('taxagent_token')
-      localStorage.removeItem('taxagent_refresh_token')
+      localStorage.removeItem('vatify_user')
+      localStorage.removeItem('vatify_token')
+      localStorage.removeItem('vatify_refresh_token')
     }
     
     navigateTo('/login')
@@ -41,9 +41,9 @@ export const useAuth = () => {
 
   // Initialize from localStorage on client side
   if (import.meta.client) {
-    const savedUser = localStorage.getItem('taxagent_user')
-    const savedToken = localStorage.getItem('taxagent_token')
-    const savedRefresh = localStorage.getItem('taxagent_refresh_token')
+    const savedUser = localStorage.getItem('vatify_user')
+    const savedToken = localStorage.getItem('vatify_token')
+    const savedRefresh = localStorage.getItem('vatify_refresh_token')
 
     if (savedUser && savedToken) {
       try {

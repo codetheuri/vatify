@@ -1,6 +1,6 @@
 # Moving to Production Guide
 
-To move TaxAgent from the Sandbox to the Real KRA Production environment, follow these steps:
+To move Vatify from the Sandbox to the Real KRA Production environment, follow these steps:
 
 ## 1. KRA Portal Actions
 1. **Apply for Go Live**: Log in to the KRA Developer Portal and click the "Initiate Go Live" button for each of your 4 products (`PIN Checker`, `Invoice Checker`, `NIL Return`, `Taxpayer Obligations`).

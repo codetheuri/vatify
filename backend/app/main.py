@@ -11,7 +11,7 @@ from app.models.user_models import User
 from app.models.transaction_models import TaxTransaction, CategoryRule, TaxPeriod, TaxDocument
 
 app = FastAPI(
-    title="TaxAgent API",
+    title="Vatify API",
     description="KRA iTax Return Preparation Assistant",
     version="1.0.0",
     docs_url=None,
@@ -50,7 +50,7 @@ app.include_router(doc_ctrl.router)
 
 @app.get("/", include_in_schema=False)
 def read_root():
-    return {"message": "Welcome to the TaxAgent API", "docs": "/docs"}
+    return {"message": "Welcome to the Vatify API", "docs": "/docs"}
 
 @app.get("/docs", include_in_schema=False)
 async def scalar_html():

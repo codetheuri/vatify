@@ -7,7 +7,7 @@
 ## 🗂 Project Structure
 
 ```
-taxagent/
+vatify/
 ├── backend/    # FastAPI + SQLite REST API
 └── frontend/   # Nuxt 4 (Vue 3) web application
 ```

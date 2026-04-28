@@ -1,5 +1,5 @@
 {
-  "name": "taxagent-frontend",
+  "name": "vatify-frontend",
   "type": "module",
   "private": true,
   "scripts": {

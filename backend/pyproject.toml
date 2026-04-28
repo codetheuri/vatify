@@ -1,5 +1,5 @@
 [project]
-name = "taxagent"
+name = "vatify"
 version = "0.1.0"
 description = "KRA iTax Return Preparation Assistant"
 authors = [
