@@ -1,0 +1,21 @@
+{
+  "name": "taxagent-frontend",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "lucide-vue-next": "^0.577.0",
+    "nuxt": "^3.15.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest"
+  }
+}

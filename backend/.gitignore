@@ -1,0 +1,48 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ─────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Poetry ───────────────────────────────────────────────
+# Keep poetry.lock in VCS for reproducible installs
+
+# ── Environment / Secrets ────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Database ─────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Uploads / Generated storage ──────────────────────────
+storage/statements/*
+!storage/statements/.gitkeep
+
+# ── Testing ──────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── IDE ──────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── OS ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

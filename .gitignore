@@ -1,0 +1,12 @@
+# ── Root-level ignores ───────────────────────────────────
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets leaked at root level
+.env

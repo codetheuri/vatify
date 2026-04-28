@@ -1,0 +1,24 @@
+
+services:
+  collabora:
+    image: collabora/code:latest
+    container_name: collabora-online
+    restart: always
+    ports:
+      - "9980:9980"
+    environment:
+      # Replace 'localhost' with your IP if accessing from another machine
+      - aliasgroup1=http://localhost:8080
+      - DONT_GEN_SSL_CERT=true
+      - extra_params=--o:ssl.enable=false --o:ssl.termination=false
+      - username=admin
+      - password=admin123
+      - ENABLE_VBA_MACROS=true  # Key for your KRA iTax sheets
+    cap_add:
+      - MKNOD
+    volumes:
+      - collabora_data:/etc/coolwsd
+      - /var/www/html/4thyear/taxagent/backend/:/data  # Map your local project folder here
+
+volumes:
+  collabora_data: 
